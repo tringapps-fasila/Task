@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./javascript/index.js"></script>
+</head>
+<body onload="initial()">
+    <div class="upbar">/
+         <div class="card">
+        <label>Email</label>
+        <input type="email" id="mail" name="mail" required><br><br>
+        <label>FirstName</label>
+        <input type="text" id="FirstName" name="FirstName" required><br><br>
+        <label>LastName</label>
+        <input type="text" id="LastName" name="LastName"required><br><br>
+        <label>Phone number</label>
+        <input type="text" minlength="10"  maxlength="10" id="phone" required><br><br>
+        <label>DOB</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+        <label>Gender</label>
+        <input type="radio" id="female" name="Gender" value="female"><label for="female"> Female </label>
+        <input type="radio" id="male" name="Gender" value="male"><label for="male"> Male </label><br>
+        <p><input type="checkbox" id="terms">terms and conditions</p>
+        <button id="submit" onclick="onsubmitreg()">submit</button>
+        </div>
+
+    </div>
+    <div class="downbar">
+        <h1>USER DETAILS</h1>
+        <table id="regtable">
+            <thead>
+                <tr>
+                    <td>Id</td>
+                    <td>Email</td>
+                    <td>FirstName</td>
+                    <td>LastName</td>
+                    <td>phonenumber</td>
+                    <td>dob</td>
+                    <td>Gender</td>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+         
+    
+</body>
+</html>
